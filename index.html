@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vis examples</title>
+
+    <!-- vis-network - библиотека для отрисовки графов -->
+    <script src="./common/visjs-network/vis-network.min.js"></script>
+
+    <!-- codemirror - библиотека для редактора JS в браузере. -->
+    <script src="./common/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="./common/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="./common/codemirror/theme/material.css" />
+    <script src="./common/codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="./common/styles.css"></link>
+  </head>
+  <body>
+    <div id="networkWrapper">
+        <div id="networkExample"></div>
+    </div>
+    <div id="code"></div>
+    <div class='buttons'>
+        <button type="button" id='openSample' onClick="document.getElementById('fileInput').click();">Открыть файл</button>
+        <input type="file" id="fileInput"></input>
+        <button type="button" id='evaluate'>Выполнить код (Ctrl+Enter)</button>
+    </div>
+    <script src="./common/codeEditor.js"></script>
+  </body>
+</html>
