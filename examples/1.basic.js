@@ -24,4 +24,6 @@ var data = {
   edges: edges
 }
 var options = {}
+
+// инициализируем граф
 new vis.Network(container, data, options)

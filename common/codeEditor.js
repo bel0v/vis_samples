@@ -1,7 +1,7 @@
 var editor = CodeMirror(document.getElementById('code'), {
-  value: 'function myScript(){return 100;}\n',
   mode: 'javascript',
-  theme: 'material',
+  theme: 'mdn-like',
+  lineNumbers: true,
   extraKeys: {
     'Ctrl-Enter': evaluate
   }
@@ -27,6 +27,7 @@ function openFile(evt) {
   loadFile(evt).then(res => {
     console.log(res)
     editor.setValue(res)
+    evaluate()
   })
 }
 
